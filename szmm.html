@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+
+</head>
+<body class="bgeee">
+<form action="mmgl.html">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <input type="submit" onclick="check()" class="font_36 fr mr34 h" id="submit" value="保存"/>
+        <p class="font_36">设置密码</p>
+    </header>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">新密码</p>
+        <input type="password" class="qrdd_add_input" id="pass1" required/>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl" >确认密码</p>
+        <input type="password" class="qrdd_add_input" id="pass2" required/>
+    </section>
+    
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+function check(){
+    var pass1=document.getElementById("pass1");
+    var pass2=document.getElementById("pass2");
+    if(pass1.value!=pass2.value){
+        pass2.setCustomValidity("密码不一致");
+    }else{
+        window.location.href='mmgl.html';
+    }
+    
+}
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+    
+
+</head>
+<body class="bgeee mb80" >
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">订单详情</p>
+    </header>
+    <section class="ty h160 bgfff borb0 pt20" style="line-height: 1rem;">
+        <div class="fl">
+            <img src="images/icon-11.png" alt="" class="w36">
+        </div>
+        <div class="w90_ fl" onclick="javascript:window.location.href='wl.html','_self'">
+            <div class="h98 ty fl">
+                <p class="font_30 co000 fl" style="line-height: .5rem;">[上海市] 已签收，感谢使用申通快递，期待再次为您服务</p>
+            </div>
+            <div class="ty fl">
+                <p class="font_30 fl col999" style="line-height: 0.5rem">2016-07-13</p>
+            </div>
+        </div>
+        <div class="fr like_r mt64"></div>
+    </section>
+    <section class="ty h160 bgfff pb24" style="line-height: 1.8rem;">
+        <div class="fl">
+            <img src="images/icon-12.png" alt="" style="width:0.36rem">
+        </div>
+        <div class="w90_ fl">
+            <div class="h98 ty fl">
+                <p class="font_30 co000 fl">用户名</p>
+                <p class="font_30 ml34 fr colred co000">18736616788</p>
+            </div>
+            <div class="ty fl">
+                <p class="font_30 fl col999" style="line-height: 0.5rem">[默认]收货地址：上海市松江区江田东路</p>
+            </div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h98" onclick="javascript:window.location.href='des_jj.html','_self'">
+            <div class="fl"><img src="images/tou-06.png" alt="" class="w48"></div>
+            <div class="fl pl20">
+                <p class="font_28 col333">设计师<img src="images/tou-12.png" alt="" class="pic28 pot4"></p>
+            </div>
+            <p class="font_32 coc33 fr">交易成功</p>
+        </div>
+        <div class="h240" onclick="javascript:window.location.href='goods_main.html','_self'">
+            <div class="w30 fl mr8">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 col333 fl w90_">森林实木，简约而不失对生活的品味</p>
+                <div class="like_r fr"></div>
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 colred mt64 fl">￥ 3000.00</p>
+            </div>
+        </div>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">运费</p>
+        <p class="font_30 ml34 fr">￥0.00</p>
+    </section>
+    <section class="h98 ty bgfff">
+        <p class="font_30 co000 fl">实付款</p>
+        <p class="font_30 ml34 fr colred">￥3000.00</p>
+    </section>
+    <section class="h98 ty borb0 bgfff" ng-controller="main" id="lxmj">
+        <img src="images/qrdd-02.png" alt="" class="w36 fl mt28 mr8">
+        <p class="font_30 co000 ml34" onclick="javascript:window.location.href='chat.html','_self'">联系卖家</p>
+    </section>
+    <section class="jj mt178"></section>
+    <footer>
+        <div class="g_btn font_28">删除订单</div>
+    </footer>
+    <div class="ui-mask" id="da"></div>
+    <section class="dd_del_dk radius">
+        <div class="dd_del_dk_t borb0">
+            <p class="font_36 mt64">确认删除订单？</p>
+            <p class="font_28 col333 mt34 mb30">删除之后此条记录不可恢复</p>
+        </div>
+        <div class="dd_del_dk_b">
+            <p class="font_36" id="qx">取消</p>
+            <p class="font_36">确认</p>
+        </div>
+    </section>
+    
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $("footer").click(function(){
+        $(".dd_del_dk").show();
+        $("#da").show();
+$("body").css({'position':'fixed'});
+        $("#qx").click(function(){
+            $(".dd_del_dk").hide();
+            $("#da").hide();
+            $("body").css({'position':'static'});
+        })
+    })
+
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

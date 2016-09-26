@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+    <header class="borb0 bgfff h98 ty">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="alic font_36 fl w">通知</p>
+        <div class="fr w48"><img src="images/ljt.png" alt="" style="width:auto;height:0.5rem;" id="fxbtn"></div>
+    </header>
+    <section class="h124 ty borb0 bgfff">
+        <div class="w13_ fl"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+        <div class=" fl ml34" id="goods_sj" style="width:82%">
+            <p class="font_28 col333">设计师</p>
+            <p class="font_24 col999"  style="margin-top: 0.57rem;">刚刚对您的《实木画框的二次生命》很喜欢</p>
+        </div>
+    </section>
+    <section class="h124 ty borb0 bgfff">
+        <div class="w13_ fl"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+        <div class=" fl ml34" id="goods_sj" style="width:82%">
+            <p class="font_28 col333">设计师</p>
+            <p class="font_24 col999" style="margin-top: 0.57rem;">刚刚对您的《实木画框的二次生命》很喜欢</p>
+        </div>
+    </section>
+    <div class="ui-mask" id="da"></div>
+    <section class="news_tz_qk">
+    	<p class="font_24 col999 borb0">清空全部通知</p>
+        <button style="margin-bottom:0.2rem;" class=" coc33">确定</button>
+        <button id="qx">取消</button>
+    </section>
+</body>
+<script type="text/javascript" src="js/j.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	$("#fxbtn").click(function(){
+		$(".news_tz_qk").slideToggle();
+		$("#da").show();
+		})
+	$("#da").click(function(){
+		$(".news_tz_qk").slideToggle();
+		$("#da").hide();
+		})
+	$("#qx").click(function(){
+		$(".news_tz_qk").slideToggle();
+		$("#da").hide();
+		})
+</script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

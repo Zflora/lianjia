@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+<form action="mmgl.html">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">提现</p>
+    </header>
+    <section class="font_28 bgeee col999 ty ptb20 h40">提现至</section>
+    <section class="h98 ty borb0 bgfff" id="cz" onclick="javascript:window.location.href='txzh.html','_self'">
+        <p class="font_30 co000 fl">支付宝账户</p>
+        <div class="like_r fr mt34"></div>
+        <p type="text" class="qrdd_add_input fr w45 alir mr8" id="zh">13022222222</p>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl" >提现金额</p>
+        <p class="font_30 co000 fr">元</p>
+        <!-- onpaste="return false;" 表示不能粘贴  -->
+        <input type="tel" class="qrdd_add_input fr w45 alir mr8"  onpaste="return false;" onkeypress="keyPress()"  placeholder="可提现金额0">
+
+    </section>
+    
+    <section class="ty mt178" onclick="javascript:window.location.href='qianbao.html','_self'">
+        <div class="g_btn font_28">
+            <p>确定提现</p>
+        </div>
+    </section>
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function keyPress() {    
+     var keyCode = event.keyCode;    
+     if ((keyCode >= 48 && keyCode <= 57))    
+    {    
+         event.returnValue = true;    
+     } else {    
+           event.returnValue = false;    
+    }    
+ } 
+ $(function (){
+        var zh = $('#zh').text();
+        var mphone = zh.substr(0, 3) + '****' + zh.substr(7);
+        $('#zh').text(mphone);
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

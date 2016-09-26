@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+
+</head>
+<body class="bgeee" id="qx_on">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_30 co000 fr news_bk mr34" style="margin-top: 0.2rem;" id="scdel">删除</p>
+
+        <p class="font_36">我售出的</p>
+    </header>
+    
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h224 pt20">
+            <div class="w30 fl mr8"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 col333 fl w"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">森林实木，简约而不失对生活的品味</p>
+                <input type="checkbox" name="checkbox" checked="" class="xsjy_btn fr yuan w40h40" style="margin-top: 0.1rem;margin-right: 0;display:none">
+            </div>
+            <div class="w45 fl ml34" onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <p class="font_30 colred mt64 fl">已售出</p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h224 pt20">
+            <div class="w30 fl mr8"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 col333 fl w"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">森林实木，简约而不失对生活的品味</p>
+                <input type="checkbox" name="checkbox" checked="" class="xsjy_btn fr yuan w40h40" style="margin-top: 0.1rem;margin-right: 0;display:none">
+            </div>
+            <div class="w45 fl ml34" onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <p class="font_30 colred mt64 fl">已售出</p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h224 pt20">
+            <div class="w30 fl mr8"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 col333 fl w"  onclick="javascript:window.location.href='dd_myscdel.html','_self'">森林实木，简约而不失对生活的品味</p>
+                <input type="checkbox" name="checkbox" checked="" class="xsjy_btn fr yuan w40h40" style="margin-top: 0.1rem;margin-right: 0;display:none">
+            </div>
+            <div class="w45 fl ml34" onclick="javascript:window.location.href='dd_myscdel.html','_self'">
+                <p class="font_30 colred mt64 fl">已售出</p>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="bgfff hei80 ty" style="display:none;">
+        <div class="qx fr" id="qx">
+            <p class="font_32 co000 mr8 fl">全选</p>
+            <input type="checkbox" name="qxbtn" checked="" id="qxbtn" class="xsjy_btn fl yuan w40h40" style="margin-top: 0.25rem;margin-right: 0;">
+        </div>
+    </footer>
+
+<div class="ui-mask" id="da"></div>
+    <section class="dd_del_dk radius" style="height:auto;">
+        <div class="dd_del_dk_t borb0">
+            <p class="font_36 h160">您确定要删除吗？</p>
+        </div>
+        <div class="dd_del_dk_b">
+            <p class="font_36" id="dd_mysc_qx">取消</p>
+            <p class="font_36">确认</p>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$("#scdel").click(function(){
+        $("footer").show();
+		$(".xsjy_btn").show();
+        $(this).addClass("lxr_on");
+    
+	$("#qxbtn").click( 
+	  function(){ 
+		if(this.checked){ 
+			$("input").attr('checked', true).removeClass("xsjy_btn_on");
+		}else{ 
+			$("input").attr('checked', false).addClass("xsjy_btn_on");
+		} 
+	  } 
+	);
+    $(".lxr_on").click(function(){
+        $(".dd_del_dk").show();
+                $("#da").show();
+                $("body").css({'position':'fixed'})
+                $("#da").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                    $("body").css({'position':'static'})
+                })
+                $("#dd_mysc_qx").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                    $("body").css({'position':'static'})
+                })
+
+    })
+    $(".xsjy_btn").click(function(){
+        if (this.checked) {
+            $(this).removeClass("xsjy_btn_on");
+        }else{
+            $(this).addClass("xsjy_btn_on");
+        };
+    })
+    
+ })   
+
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx.css" media="screen">
+<!-- <link rel="stylesheet" type="text/css" href="css/frozen.css">
+ --></head>
+<body class="bgeee ">
+<form action="">
+    <header class="borb0 bgfff">
+        <p class="font_36">个人中心</p>
+    </header>
+    <section class="jj"></section>
+    <section class="ty h160 bgfff" onclick="javascript:window.location.href='enter_index.html','_self'">
+        <img src="images/tou-06.png" alt="" class="w100h100 mt28 fl">
+        <p class="font_30 fl ml34 col333">用户名</p>
+        <div class="like_r fr mt64"></div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty h98 bgfff borb0" onclick="javascript:window.location.href='myzy.html','_self'">
+        <img src="images/my-01.png" alt="" class="w36 mt28 fl">
+        <p class="font_30 fl ml34 col333">我的主页</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    <section class="ty h98 bgfff" onclick="javascript:window.location.href='lxr.html','_self'">
+        <img src="images/my-02.png" alt="" class="w36 mt28 fl">
+        <p class="font_30 fl ml34 col333">联系人</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty h98 bgfff borb0" onclick="javascript:window.location.href='dd.html','_self'">
+        <img src="images/my-03.png" alt="" class="w28 mt28 fl">
+        <p class="font_30 fl ml34 col333">订单</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    <section class="ty h98 bgfff" onclick="javascript:window.location.href='qianbao.html','_self'">
+        <img src="images/my-04.png" alt="" class="w36 mt28 fl">
+        <p class="font_30 fl ml34 col333">钱包</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty h98 bgfff borb0" id="sq">
+        <img src="images/my-05.png" alt="" class="w28 mt28 fl">
+        <p class="font_30 fl ml34 col333">申请在线销售</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty h98 bgfff borb0" onclick="javascript:window.location.href='mysz.html','_self'">
+        <img src="images/my-06.png" alt="" class="w36 mt28 fl">
+        <p class="font_30 fl ml34 col333">设置</p>
+        <div class="like_r fr mt34"></div>
+    </section>
+    
+</form>
+<footer>
+    <ul>
+        <li class="footer1" onclick="javascript:window.location.href='index.html','_self'"></li>
+        <li class="footer2" onclick="javascript:window.location.href='fx.html','_self'"></li>
+        <li class="footer3" onclick="javascript:window.location.href='news.html','_self'"></li>
+        <li class="footer4_on" onclick="javascript:window.location.href='my.html','_self'"></li>
+    </ul>
+</footer>
+    <div class="ui-mask" id="da"></div>
+    <section class="xsjy">
+        <div class="xsjy_t borb0 pb24">
+            <p class="font_40 alic">什么是恋嘉线上担保交易？</p>
+            <p class="font_32 mt34">1，同意并确认[恋家销售服和结算协议]。</p>
+            <p class="font_32 mt34">2，填写真实有效的作品价格。</p>
+            <p class="font_32 mt34">3，恋嘉会收取作品售出价格的5%作为服务费。抵扣设计款在第三方平台转付过程中所产生的费用</p>
+            <p class="font_32 mt34">请保证在恋嘉平台进行支付，否则恋嘉将无法保证您的交易安全。</p>
+            <p class="font_30 co36c mt34"><input type="checkbox" name="checkbox" checked="checked" class="xsjy_btn xsjy_btn_on">恋嘉代理销售服务和结算协议</p>
+        </div>
+        <div class="xsjy_b ty"><p class="xsjy_btn2">确定</p></div>
+    </section>
+</body> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(".xsjy_btn").click(function(){
+        if ($(this).attr('checked')=='checked') {
+            $(this).addClass("xsjy_btn_on");
+        }else{
+            $(this).removeClass("xsjy_btn_on");
+        };
+    })
+    $("#sq").click(function(){
+        $(".xsjy").show();
+        $("#da").show();
+        $("body").css({'overflow-y':'hidden'})
+        $(".xsjy_b").click(function(){
+            $(".xsjy").hide();
+            $("#da").hide();
+            $("body").css({'overflow-y':'scroll'})
+        })
+    })
+	$("#da").click(function(){
+		$(this).hide();
+		$(".xsjy").hide();
+		})
+
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/zz_index.css">
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx.css" media="screen">
+
+</head>
+<body class="bgeee" >
+
+    <header class="borb0 bgfff h98 ty">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="alic font_36 fl w">查找联系人</p>
+    </header>
+    <section class="ty borb0 bgfff pt20 pb24">
+        <p class="ss font_24 alic" id="ren_ss">
+            <img src="images/fdj.png" alt="">
+            搜索
+        </p>
+        <p class="ss font_24 pl20 dn" id="ren_search">
+            <img src="images/fdj.png" alt="">
+            <input type="text" class="font_24 col999 w" placeholder="搜索">
+        </p>
+    </section>
+    <div id="letter" class="ty h98"></div>
+        <div class="sort_box"  ng-controller="main" id="lxmj">
+            <div class="sort_list" onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">张三
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">刘杰
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">王五
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">刘六
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">马七
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">黄八
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">莫九
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32 font_32 float_l">陈十
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">a
+                </div>
+            </div>
+            <div class="sort_list"onclick="javascript:window.location.href='chat.html','_self'">
+                <div class="num_logo">
+                    <img src="images/tou-06.png" alt="">
+                </div>
+                <div class="num_name font_32">1十
+                </div>
+            </div>
+        </div>
+        <div class="initials">
+            <ul>
+            </ul>
+        </div>
+<div class="ui-mask" id="da"></div>
+    
+    
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.charfirst.pinyin.js"></script>
+    <script type="text/javascript" src="js/sort.js"></script>
+    <script type="text/javascript">
+        $("#zz_i").click(function(){
+                $(".dis").slideToggle();
+            })
+          $("#ren_ss").click(function(){
+            $("#ren_search").show();
+            $(this).hide();
+          })
+    </script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

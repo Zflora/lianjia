@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx.css" media="screen">
+</head>
+<style>
+    .h240{height: 2.25rem;padding-bottom: 0.425rem!important;}
+</style>
+<body class="mb160">
+    <header>
+    </header>
+    <section class="plr78" >
+        <p class="font_90 m mb30">您的生活！</p>
+        <p class="font_283 m">会不会因此而更加美好？</p>
+    </section>
+    <section class="plr78 mt80 borb0">
+        <p class="font_36 m mb30">最近查看的</p>
+            <div class="w100 mb30" onclick="javascript:window.location.href='goods_main.html','_self'">
+                <img src="images/pic/pic-02.png" alt="">
+            </div>
+        <p class="font_283 m mb30">实木画框的二次生命</p>
+    </section>
+    <section class=" mt34 borb0" >
+        <p class="font_36 m mb30 pl78">原创精选</p>
+        <ul class="ho">
+            <li class=" mb30" onclick="javascript:window.location.href='goods_main.html','_self'">
+                <img src="images/pic/pic-02.png" alt="">
+            </li>
+            <li class=" mb30 ">
+                <img src="images/pic/pic-03.png" alt="">
+            </li>
+            <li class=" mb30 ">
+                <img src="images/pic/pic-01.png" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class=" mt34 borb0" >
+        <p class="font_36 m mb30 pl78">设计新作</p>
+        <ul class="ho">
+            <li class=" mb30 " onclick="javascript:window.location.href='goods_main.html','_self'">
+                <img src="images/pic/pic-02.png" alt="">
+            </li>
+            <li class=" mb30 ">
+                <img src="images/pic/pic-01.png" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="pl78 mt34">
+        <p class="font_36 m mb30">设计理念</p>
+    </section>
+    <section class="plr78 mt34 borb0 h240"  onclick="javascript:window.location.href='des_ln.html','_self'">
+            <div class="fl mr8">
+                <img src="images/pic/pic-09.png" alt="" class="sh_ln">
+            </div>
+            <div class="sh_txt fr">
+                <p class="font_36 index_news" style="margin-bottom: 0.1rem" >实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命</p>
+                <p class="font_30 col999 index_news">实木画框的实木画框的第二次生命实木画框的第二次生命第二次生命</p>
+            </div>
+    </section>
+    <section class="plr78 mt34 borb0 h240"  onclick="javascript:window.location.href='des_ln.html','_self'">
+            <div class="fl mr8">
+                <img src="images/pic/pic-10.png" alt="" class="sh_ln">
+            </div>
+            <div class="sh_txt fr">
+                <p class="font_36 index_news" style="margin-bottom: 0.1rem">实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命</p>
+                <p class="font_30 col999 index_news">实木画框的第二次生命</p>
+            </div>
+    </section>
+    <section class="plr78 mt34 borb0 h240"  onclick="javascript:window.location.href='des_ln.html','_self'">
+            <div class="fl mr8">
+                <img src="images/pic/pic-11.png" alt="" class="sh_ln">
+            </div>
+            <div class="sh_txt fr">
+                <p class="font_36 index_news" style="margin-bottom: 0.1rem">实木画框的第实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命二次生命</p>
+                <p class="font_30 col999 index_news">实木画框的实木画框的第二次生命实木画框的第二次生命实木画框的第二次生命第二次生命</p>
+            </div>
+    </section>
+    <footer>
+        <ul>
+            <li class="footer1_on" onclick="javascript:window.location.href='index.html','_self'"></li>
+            <li class="footer2" onclick="javascript:window.location.href='fx.html','_self'"></li>
+            <li class="footer3" onclick="javascript:window.location.href='news.html','_self'"></li>
+            <li class="footer4" onclick="javascript:window.location.href='my.html','_self'"></li>
+        </ul>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+        (function($){
+            $(window).load(function(){
+                
+                $.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
+                
+                $(".ho").mCustomScrollbar({
+                    axis:"x",
+                    advanced:{autoExpandHorizontalScroll:true}
+                });
+
+        
+            });
+        })(jQuery);
+    </script>
+<script type="text/javascript" src="js/j.js"></script>
+
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+//只显示10个字符  之后...
+$(function (){
+        for(var i=0;i<$('.index_news').length;i++){
+            var bdphone = $('.index_news').eq(i).text(); //获取要改的元素内容
+            var mphone = bdphone.substr(0, 10) + '...' ;//方法
+            $('.index_news').eq(i).text(mphone);//赋值
+        }
+    })
+</script>

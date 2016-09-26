@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_30 co000 fr news_bk mr34 lxr_on" style="margin-top: 0.2rem;" id="scdel">删除</p>
+    </header>
+    <section class="borb0">
+        <div>
+            <img src="images/pic/pic-11.png" alt="" class="fl">
+        </div>
+        <div class="ptb20 ml34 ">
+            <p class="font_36 fl co000 mt34">半木，半工作台</p>
+            <p class="font_24 fr col999 mt34 mr34">1952 浏览</p>
+        </div>
+        <div class="font_24 ml34 ptb20 clear col999">设计师 12小时前</div>
+        <div class="ml34 clear pb24">
+            <p class="font_24 col333 fl mr34">价格</p>
+            <p class="font_24 col999">￥ 3000.00</p>
+        </div>
+        
+    </section>
+    <section class="h96 ty">
+        <div class="ptb20">
+            <div class="like_l fl"><img src="images/des-04.png" alt="" id="dz"></div>
+            <div class="like_c fl">
+                <ul>
+                    <li><img src="images/tou-01.png" alt=""></li>
+                    <li><img src="images/tou-02.png" alt=""></li>
+                    <li><img src="images/tou-03.png" alt=""></li>
+                    <li><img src="images/tou-04.png" alt=""></li>
+                    <li><img src="images/tou-05.png" alt=""></li>
+                    <li><img src="images/tou-06.png" alt=""></li>
+                    <li><img src="images/tou-07.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="like_r fr"></div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section>
+        <div class="h124 mb60 mt34 ty bgfff pb34">
+            <div class="w13_ fl"><img src="images/tou-06.png" alt=""></div>
+            <div class="w65_ fl ml34">
+                <p class="font_28 col333 mt8">设计师<img src="images/tou-12.png" alt="" class="pic28 pot4"></p>
+                <p class="font_24 col999" style="margin-top:0.25rem;">
+                    <span>12小时前</span>
+                    <span><img src="images/tou-11.png" alt="" class="pic18">上海</span>
+                </p>
+                <p class="font_28 col333 mt34 clear pb24">设计源于生活</p>
+            </div>
+            <div class=" fr dz mt48">
+                <img src="images/des-04.png" alt="" class="w33 mr8 fl dz_pic">
+         <!--        <p class="w33 mr8 fl dz_pic font_24 col999">0</p> -->
+                <span class="font_24 fl col999 dz_num">9</span>
+            </div>
+        </div>
+        <section style="height:0.025rem" class="bgeee"></section>
+        <div class="h124 mb60 mt34 ty bgfff pb34">
+            <div class="w13_ fl"><img src="images/tou-06.png" alt=""></div>
+            <div class="w65_ fl ml34">
+                <p class="font_28 col333 mt8">设计师<img src="images/tou-12.png" alt="" style="position:relative;top:0.09rem;" class="pic28 pot4"></p>
+                <p class="font_24 col999" style="margin-top:0.25rem;">
+                    <span>12小时前</span>
+                    <span><img src="images/tou-11.png" alt="" class="pic18">上海</span>
+                </p>
+                <p class="font_28 col333 mt34 clear pb24">设计源于生活</p>
+            </div>
+            <div class=" fr dz mt48">
+                <img src="images/des-04.png" alt="" class="w33 mr8 fl dz_pic">
+         <!--        <p class="w33 mr8 fl dz_pic font_24 col999">0</p> -->
+                <span class="font_24 fl col999 dz_num">9</span>
+            </div>
+        </div>
+        <section style="height:0.025rem" class="bgeee"></section>
+    </section>
+    <section class="jj h98"></section>
+    <section class="ty hei80">
+            <input type="text" class="font_28 scdel_input col333 mtb">
+            <p class="font_28 lxr_on fr scdel_hf mtb">回复</p>
+    </section>
+    <div class="ui-mask" id="da"></div>
+    <section class="dd_del_dk radius" style="height:auto;top:25%">
+        <div class="dd_del_dk_t borb0">
+            <p class="font_36 h160">您确定要删除吗？</p>
+        </div>
+        <div class="dd_del_dk_b">
+            <p class="font_36" id="qx">取消</p>
+            <p class="font_36">确认</p>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript">
+    $("#scdel").click(function(){
+        $(".dd_del_dk").show();
+                $("#da").show();
+                $("body").css({'position':'fixed'})
+                $("#da").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                    $("body").css({'position':'static'})
+                })
+                $("#qx").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                    $("body").css({'position':'static'})
+                })
+    })
+    $("#dz").click(function(){
+        if($(this).attr("src")=="images/des-04.png"){
+            $(this).attr("src","images/xin.png")
+            }else{
+                $(this).attr("src","images/des-04.png")
+                }
+        
+        })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

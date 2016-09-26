@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+
+</head>
+<body class="bgeee">
+<form action="">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:window.location.href='qrdd_addglmain.html','_self'"></div>
+        <p class="font_36 fr mr34" id="btn" onclick="javascript:window.location.href='qrdd_addxgwc.html','_self'">修改</p>
+        <p class="font_36">收货地址</p>
+    </header>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">收货人</p>
+        <p class="qrdd_add_input" >用户名</p>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">联系方式</p>
+        <p  class="qrdd_add_input">18736616788</p>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">所在地区</p>
+        <p  class="qrdd_add_input" >上海市松江区</p>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">详细地址</p>
+        <p class="qrdd_add_input"  >江田东路</p>
+    </section>
+    <section class="jj"></section>
+    <section class="h98 ty borb0 bgfff" id="del">
+        <p class="font_30 colred fl">删除收货地址</p>
+    </section>
+    <footer style="position:absolute;bottom:0;">
+        <div class="g_btn font_28">
+            <p onclick="javascript:window.location.href='qrdd_addgl.html','_self'">设为默认地址</p>
+        </div>
+    </footer>
+    <div class="ui-mask" id="da"></div>
+    <section class="dd_del_dk radius" style="height:auto;">
+        <div class="dd_del_dk_t borb0">
+            <p class="font_36 h160">您确定要删除吗？</p>
+        </div>
+        <div class="dd_del_dk_b">
+            <p class="font_36" id="dd_mysc_qx">取消</p>
+            <p class="font_36">确认</p>
+        </div>
+    </section>
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/j.js"></script>
+<script>
+    $("#del").click(function(){
+        $(".dd_del_dk").show();
+                $("#da").show();
+                $("#da").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                })
+                $("#dd_mysc_qx").click(function(){
+                    $(".dd_del_dk").hide();
+                    $("#da").hide();
+                })
+
+    })
+</script>
+</html>

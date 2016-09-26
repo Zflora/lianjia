@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">订单状态</p>
+    </header>
+    <section class="h98 ty borb0 bgfff" id="cz">
+        <p class="font_30 co000 fl">物流跟踪</p>
+    </section>
+    <section class="ty bgfff" onclick="javascript:window.location.href='','_self'">
+        <div class="wl ptb20 ml34">
+            <div class="wl_new borl">
+                <div>
+                    <img src="images/wl-01.png" alt="" class="wl_newpic fl">
+                    <div class="w90_ plr34">
+                        <p class="font_30 mb30 col333">在上海松江区南部公司进行签收扫描，快件已被 已签收 签收</p>
+                        <p class="font_24 col999">2016年8月4日 12:36:06</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wl-02.png" alt="" class="wl_oldpic fl">
+                    <div class="w90_ plr34">
+                        <p class="font_30 mb30 col333">在上海松江区南部公司进行签收扫描，快件已被 已签收 签收</p>
+                        <p class="font_24 col999">2016年8月4日 12:36:06</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wl-02.png" alt="" class="wl_oldpic fl">
+                    <div class="w90_ plr34">
+                        <p class="font_30 mb30 col333">在上海松江区南部公司进行签收扫描，快件已被 已签收 签收</p>
+                        <p class="font_24 col999">2016年8月4日 12:36:06</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wl-02.png" alt="" class="wl_oldpic fl">
+                    <div class="w90_ plr34">
+                        <p class="font_30 mb30 col333">在上海松江区南部公司进行签收扫描，快件已被 已签收 签收</p>
+                        <p class="font_24 col999">2016年8月4日 12:36:06</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wl-02.png" alt="" class="wl_oldpic fl">
+                    <div class="w90_ plr34">
+                        <p class="font_30 mb30 col333">在上海松江区南部公司进行签收扫描，快件已被 已签收 签收</p>
+                        <p class="font_24 col999">2016年8月4日 12:36:06</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function keyPress() {    
+     var keyCode = event.keyCode;    
+     if ((keyCode >= 48 && keyCode <= 57))    
+    {    
+         event.returnValue = true;    
+     } else {    
+           event.returnValue = false;    
+    }    
+ } 
+    $("#cz").click(function(){
+        $("#xb_on").slideToggle();
+        $("#xb_on p").click(function(){
+            $("#cz input").attr("value",$(this).html());
+            $("#xb_on").slideUp();
+        })
+        $("#xb_on button").click(function(){
+            $("#xb_on").slideUp();
+        });
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

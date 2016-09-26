@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+<form action="mmgl.html">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">选择提现账户</p>
+    </header>
+    <section class="font_28 bgeee col999 ty ptb20 h40">提现至</section>
+    <section class="h98 ty borb0 bgfff col999" id="cz"  onclick="javascript:window.location.href='tx.html','_self'">
+        <p class="font_30 co000 fl">支付宝账户</p>
+        <input type="text" class="qrdd_add_input fr w45 alir mr8" value="13022222222" id="zh1">
+    </section>
+    <section class="h98 ty borb0 bgfff col999" id="cz"  onclick="javascript:window.location.href='tx.html','_self'">
+        <p class="font_30 co000 fl">微信账户</p>
+        <input type="text" class="qrdd_add_input fr w45 alir mr8" value="13033332223" id="zh2">
+    </section>
+
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function keyPress() {    
+     var keyCode = event.keyCode;    
+     if ((keyCode >= 48 && keyCode <= 57))    
+    {    
+         event.returnValue = true;    
+     } else {    
+           event.returnValue = false;    
+    }    
+ } 
+  $(function (){
+        var zh1 = $('#zh1').attr("value");
+        var mphone = zh1.substr(0, 3) + '****' + zh1.substr(7);
+        $('#zh1').attr("value",mphone);
+		var zh2 = $('#zh2').attr("value");
+        var mphone = zh2.substr(0, 3) + '****' + zh2.substr(7);
+        $('#zh2').attr("value",mphone);
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

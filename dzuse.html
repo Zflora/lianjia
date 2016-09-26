@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/index.css" media="screen">
+
+
+</head>
+<body class="bgeee">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+
+        <p class="font_36">点赞用户</p>
+    </header>
+            <section class="h124 ty borb0 bgfff">
+                <div class="w13_ fl" onclick="javascript:window.location
+                .href='des_jj.html','_self'"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+                <div class="w65_ fl ml34" id="goods_sj">
+                    <p class="font_28 col333" style="margin-top: 0.1rem">设计师</p>
+                    <p class="font_24 col999" style="margin-top: 0.45rem;"><span class="mr8">24 作品</span><span class="mr8">534 粉丝</span><span  style="margin-top:0.12rem;"><img src="images/tou-11.png" alt="" class="pic18">上海</span></p>
+                </div>
+                <div class="w10_ fr"><img src="images/hf.png" alt="" class="gz"></div>
+            </section>
+            <section class="h124 ty borb0 bgfff">
+                <div class="w13_ fl"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+                <div class="w65_ fl ml34" id="goods_sj">
+                    <p class="font_28 col333" style="margin-top: 0.1rem">设计师</p>
+                    <p class="font_24 col999" style="margin-top: 0.45rem;"><span class="mr8">24 作品</span><span class="mr8">534 粉丝</span><span  style="margin-top:0.12rem;"><img src="images/tou-11.png" alt="" class="pic18">上海</span></p>
+                </div>
+                <div class="w10_ fr"><img src="images/tou-09.png" alt="" class="gz"></div>
+            </section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    $(".gz").click(function(){
+        if ($(this).attr("src")=="images/tou-09.png") {
+            $(this).attr("src","images/fsb.png")
+        }else{
+            $(this).attr("src","images/tou-09.png")
+        };
+        
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

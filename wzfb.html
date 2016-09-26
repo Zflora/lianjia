@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+<form action="">
+    <header class="borb0 bgfff h98 ty">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="alic font_36 fl w">文章发布</p>
+    </header>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">文章标题</p>
+        <div class="like_r fr mt34"></div>
+        <input type="text" class="qrdd_add_input">
+    </section>
+    <section class="alic">
+        <div id="imgdiv" class="wztit"><img id="imgShow" style="width: 3rem;height: 4rem;" /></div>
+        <label for="up_img" class="wzbtn lxr_on font_30" style="display:block">上传照片</label><input type="file" id="up_img" style="position:absolute;clip:rect(0 0 0 0);"/>
+        <p class="font_26 col999">请上传一张图片作为文章封面</p>
+    </section>
+    <section class="jj"></section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl">文章内容</p>
+        <input type="text" class="qrdd_add_input">
+    </section>
+    <section class="ty bgfff">
+        <textarea name="" id="" class="textarea font_28" placeholder="请详细叙述您的设计理念"></textarea>
+    </section>
+    <section class="jj mt178"></section>
+    <section>
+        <div class="g_btn font_28">
+            <p onclick="javascript:window.location.href='myzy.html','_self'">确定</p>
+        </div>
+    </section>
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+
+            if ($("#imgShow".attr('src'))) {
+                $("footer").find("div").attr("style","background:#000;")
+            };
+        }
+
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>

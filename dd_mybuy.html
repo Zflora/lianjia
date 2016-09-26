@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+
+</head>
+<body class="bgeee ">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">我购买的</p>
+    </header>
+    
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h98" onclick="javascript:window.location.href='dd_main.html','_self'">
+            <div class="fl"><img src="images/tou-06.png" alt="" class="w48"></div>
+            <div class="fl pl20">
+                <p class="font_28 col333">设计师<img src="images/tou-12.png" alt="" class="pic28 pot4"></p>
+            </div>
+            <p class="font_32 coc33 fr">交易成功</p>
+        </div>
+        <div class="h240">
+            <div class="w30 fl mr8" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <p class="font_30 col333 fl w90_">森林实木，简约而不失对生活的品味</p>
+                <div class="like_r fr"></div>
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 colred fl" style="margin-top: 1rem;">￥ 3000.00</p>
+                <p class="dd_mybuy_del fr deldd">删除订单</p>
+            </div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h98" onclick="javascript:window.location.href='dd_main.html','_self'">
+            <div class="fl"><img src="images/tou-06.png" alt="" class="w48"></div>
+            <div class="fl pl20">
+                <p class="font_28 col333">设计师<img src="images/tou-12.png" alt="" class="pic28 pot4"></p>
+            </div>
+            <p class="font_32 coc33 fr">交易成功</p>
+        </div>
+        <div class="h240">
+            <div class="w30 fl mr8" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <p class="font_30 col333 fl w90_">森林实木，简约而不失对生活的品味</p>
+                <div class="like_r fr"></div>
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 colred fl" style="margin-top: 1rem;">￥ 3000.00</p>
+                <p class="dd_mybuy_del fr deldd">删除订单</p>
+            </div>
+        </div>
+    </section>
+    <section class="jj"></section>
+    <section class="ty bgfff">
+        <div class="h98" onclick="javascript:window.location.href='dd_main.html','_self'">
+            <div class="fl"><img src="images/tou-06.png" alt="" class="w48"></div>
+            <div class="fl pl20">
+                <p class="font_28 col333">设计师<img src="images/tou-12.png" alt="" class="pic28 pot4"></p>
+            </div>
+            <p class="font_32 coc33 fr">交易成功</p>
+        </div>
+        <div class="h240">
+            <div class="w30 fl mr8" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <img src="images/pic/pic-11.png" alt="">
+            </div>
+            <div class="w65_ fr" onclick="javascript:window.location.href='dd_main.html','_self'">
+                <p class="font_30 col333 fl w90_">森林实木，简约而不失对生活的品味</p>
+                <div class="like_r fr"></div>
+            </div>
+            <div class="w65_ fr">
+                <p class="font_30 colred fl" style="margin-top: 1rem;">￥ 3000.00</p>
+                <p class="dd_mybuy_del fr deldd">删除订单</p>
+            </div>
+        </div>
+    </section>
+	<div class="ui-mask" id="da"></div>
+    <section class="dd_del_dk radius">
+        <div class="dd_del_dk_t borb0">
+            <p class="font_36 mt64">确认删除订单？</p>
+            <p class="font_28 col333 mt34 mb30">删除之后此条记录不可恢复</p>
+        </div>
+        <div class="dd_del_dk_b">
+            <p class="font_36" id="qx">取消</p>
+            <p class="font_36">确认</p>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    
+$(".deldd").click(function(){
+        $(".dd_del_dk").show();
+        $("#da").show();
+        $("body").css({'position':'fixed'})
+        $("#qx").click(function(){
+            $(".dd_del_dk").hide();
+            $("#da").hide();
+            $("body").css({'position':'static'})
+        })
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

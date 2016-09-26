@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link href="css/chat.css" rel="stylesheet" type="text/css">
+<title>恋嘉</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="borb0">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">昵称</p>
+    </header>
+    <!-- header结束 -->
+    <main id="contain">
+        <!-- 聊天内容 -->
+        <aside id="content" >
+            <div id="txt"></div> 
+        </aside>
+        <!-- 聊天内容结束 -->
+        <!-- footer -->
+        <aside class="footer">
+            <div  id="but2" class="dib"><p id="tuplen">发送</p></div>
+            <input type="text"  id="but1" value="">
+              <!--<div id="tupian" class="dn"><img src="img/1.png" id="footer" class="dn"></div>
+-->        </aside>
+        <!-- footer结束 -->
+    </main>
+
+</body>
+<script type="text/javascript" src="js/j.js"></script>
+<script Language="JavaScript">
+window.onload=function(){
+var oCon=document.getElementById('contain');
+var oBu1=document.getElementById('but1');
+var oBu2=document.getElementById('but2');
+var oCt=document.getElementById('content');
+var oFoot=document.getElementById('footer');
+var Onoff=true;
+var oText=document.getElementById('txt');
+var oTu=document.getElementById('tupian');
+var oTp=document.getElementById('tuplen');
+oBu2.onclick=function(){
+if (Onoff){
+ oText.innerHTML=oText.innerHTML+'<div class="mb50">'+'<br/>'+'<div class="right" style="border:0;background:none;width:auto">'+'<img src="images/des-01.png" id="footer" style="border:0;background:none;width:auto">'+'</div>'+'<div class="right mt20">'+oBu1.value+'</div>'+'<br/></div>';
+}
+else{W
+
+ oText.innerHTML=oText.innerHTML+'<div class="mb50">'+'<br/>'+'<div class="left" style="border:0;background:none;width:auto">'+'<img src="images/des-01.png" id="footer" style="border:0;background:none;width:auto">'+'</div>'+'<div class="right mt20">'+oBu1.value+'</div>'+'<br/></div>';
+};
+oBu1.value='';
+
+};
+};
+</script>
+</html>

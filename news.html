@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx.css" media="screen">
+</head>
+<body class="bgeee">
+    <header class="borb0 bgfff h98 ty alic font_36">
+        消息
+        <p class="font_30 co000 fr news_bk mt28" onclick="javascript:window.location.href='ren.html','_self'">私信</p>
+    </header>
+    <section class="ty bgfff pb24" onclick="javascript:window.location.href='news_tz.html','_self'">
+        <img src="images/news.png" class="news_tz fl ptb20">
+        <div class="font_28 col333 ml34" style="display:inline-block">通知</div>
+    </section>
+    <section class="font_28 bgeee col999 ty ptb20 h40">最近联系人</section>
+    <section class="h124 ty borb0 bgfff">
+        <div class="w13_ fl"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+        <div class=" fl ml34" id="goods_sj" style="width:82%">
+            <p class="font_28 col333">设计师<span class="fr col999">2015/08/08</span></p>
+            <p class="font_24 col999" style="margin-top: 0.13rem;">历史消息</p>
+        </div>
+    </section>
+    <section class="h124 ty borb0 bgfff">
+        <div class="w13_ fl"><img src="images/tou-06.png" alt=""><img src="images/tou-12.png" alt="" class="gx"></div>
+        <div class=" fl ml34" id="goods_sj" style="width:82%">
+            <p class="font_28 col333">设计师<span class="fr col999">08/08</span></p>
+            <p class="font_24 col999" style="margin-top: 0.13rem;">历史消息</p>
+        </div>
+    </section>
+    <footer style="display:block;">
+        <ul>
+            <li class="footer1" onclick="javascript:window.location.href='index.html','_self'"></li>
+            <li class="footer2" onclick="javascript:window.location.href='fx.html','_self'"></li>
+            <li class="footer3_on" onclick="javascript:window.location.href='news.html','_self'"></li>
+            <li class="footer4" onclick="javascript:window.location.href='my.html','_self'"></li>
+        </ul>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+
+        $(".gz").click(function(){
+        if ($(this).attr("src")=="images/tou-09.png") {
+            $(this).attr("src","images/fsb.png")
+        }else{
+            $(this).attr("src","images/tou-09.png")
+        };
+        
+    })
+    </script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

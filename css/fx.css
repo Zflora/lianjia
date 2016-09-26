@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-07-28 16:24:37
+ * @version $Id$
+ */
+
+.in_one{width: 100%;background: url(../images/pic/pic-04.png) no-repeat 100%;text-align: center;height: 6.25rem;background-size: 100%}
+.in_two{width: 100%;background: url(../images/pic/pic-05.png)no-repeat 100%;text-align: center;height: 3.3rem;background-size: 100%}
+.in_three{width: 100%;background: url(../images/pic/pic-06.png) no-repeat 100%;text-align: center;height: 3.3rem;background-size: 100%}
+.ty>div>p:first-child{position: relative;top: 10%;}
+.ty>div>p:last-child{position: relative;top: 45%;}
+footer{position: fixed;bottom: 0;width: 100%;height: 1rem;background: #000;}
+footer>ul>li{width: 25%;height: 1rem;float: left;line-height: 0.8rem;text-align: center;}
+.footer1{background: url(../images/footer-01.png) no-repeat center; background-size: 25%;}
+.footer1_on{background: url(../images/footer-08.png) no-repeat center; background-size: 25%;}
+.footer2{background: url(../images/footer-02.png) no-repeat center; background-size: 25%;}
+.footer2_on{background: url(../images/footer-07.png) no-repeat center; background-size: 25%;}
+.footer3{background: url(../images/footer-03.png) no-repeat center; background-size: 25%;}
+.footer3_on{background: url(../images/footer-06.png) no-repeat center; background-size: 25%;}
+.footer4{background: url(../images/footer-04.png) no-repeat center; background-size: 25%;}
+.footer4_on{background: url(../images/footer-05.png) no-repeat center; background-size: 25%;}

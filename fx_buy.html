@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+<link rel="stylesheet" href="css/fx_buy.css" media="screen">
+<style>
+.fx_buy_goods  img{ display:block}
+</style>
+</head>
+<body class="mb80">
+<ul class="fx_in">
+    
+    <li id="fx_xs">
+        <header class="borb0">
+            <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+            <p class="font_36">购买</p>
+        </header>
+        <section>
+            <ul class="fx_buy_nav">
+                <li>
+                    <p>类别<img src="images/fx-01.png" alt=""></p>
+                </li>
+                <li>
+                    <p>材料<img src="images/fx-01.png" alt=""></p>
+                </li>
+                <li>
+                    <p>价格<img src="images/fx-01.png" alt=""></p>
+                </li>
+                <li id="sx">
+                    <p>筛选<img src="images/fx-03.png" alt=""></p>
+                </li>
+            </ul>
+            <ul class="fx_buy_txt">
+                <li>
+                    <p>沙发</p>
+                    <p>休闲椅</p>
+                    <p>电视柜</p>
+                    <p>茶几</p>
+                    <p>角几</p>
+                    <p>间柜</p>
+                    <p>餐桌</p>
+                    <p>餐椅</p>
+                    <p>吧椅</p>
+                    <p>凳</p>
+                    <p>边柜</p>
+                    <p>床</p>
+                    <p>床头柜</p>
+                    <p>衣柜</p>
+                    <p>衣架</p>
+                    <p class="mb60">梳妆台</p>
+                    <div class="fx_t_btn">
+                        <a href="">取消</a><a href="">确定</a>
+                    </div>
+                </li>
+                <li>
+                    <p>实木</p>
+                    <p>玻璃</p>
+                    <p>不锈钢</p>
+                    <p>金属铁</p>
+                    <p>金属</p>
+                    <p class="mb60">大理石</p>
+                    <div class="fx_t_btn">
+                        <a href="">取消</a><a href="">确定</a>
+                    </div>
+                </li>
+                <li>
+                	<p>由高到低</p>
+                    <p class="mb60">由低到高</p>
+                    <div class="fx_t_btn">
+                        <a href="">取消</a><a href="">确定</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="position:absolute;top:1.675rem;">
+            <ul class="fx_buy_goods">
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-07.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-08.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-09.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-10.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-11.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+                <li onclick="javascript:window.location.href='goods_main.html','_self'">
+                    <img src="images/pic/pic-12.png" alt="">
+                    <p class="shpic_zs font_24 fx_buy_jg">￥5000</p>
+                </li>
+            </ul>
+            <div class="ui-mask" id="xiao"></div>
+        </section>
+        <div class="ui-mask" id="da"></div>
+    </li>
+    <li class="fx_buy_sx">
+        <header class="borb0">
+            <div class="hea_l3 fl mt34" id="qx"></div>
+            <p class="font_36 fr mr34" id="btn">确定</p>
+            <p class="font_36">筛选</p>
+        </header>
+        <section class="fx_sx_nav">
+                <p class="ml34 fl font_306">年份</p>
+                <p class="mr34 fr font_30">全部<span class="jtou_b fr"></span></p>
+            
+        </section>
+        <div class="year_nav" id="year">
+            <p class="selecd"></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>80以前</p>
+        </div>
+        <section class="fx_sx_nav">
+            <div>
+                <p class="ml34 fl font_306">类别</p>
+                <p class="mr34 fr font_30">全部<span class="jtou_b fr"></span></p>
+            </div>
+            
+        </section>
+        <div class="year_nav">
+            <p class="selecd">沙发</p>
+            <p>休闲椅</p>
+            <p>电视柜</p>
+            <p>茶几</p>
+            <p>角几</p>
+            <p>间柜</p>
+            <p>餐桌</p>
+            <p>餐椅</p>
+            <p>吧椅</p>
+            <p>凳</p>
+            <p>边柜</p>
+            <p>床</p>
+            <p>床头柜</p>
+            <p>衣柜</p>
+            <p>衣架</p>
+            <p>梳妆台</p>
+        </div>
+        <section class="fx_sx_nav">
+            <div>
+                <p class="ml34 fl font_306">材料</p>
+                <p class="mr34 fr font_30">全部<span class="jtou_b fr"></span></p>
+            </div>
+            
+        </section>
+        <div class="year_nav">
+            <p class="selecd">实木</p>
+            <p>玻璃</p>
+            <p>不锈钢</p>
+            <p>金属铁</p>
+            <p>金属铜</p>
+            <p>大理石</p>
+        </div>
+        <section class="fx_sx_nav">
+                <p class="ml34 fl font_306">价格区间</p>
+                <p class="mr34 fr font_30">全部<span class="jtou_b fr"></span></p>
+            
+        </section>
+        <div class="year_nav">
+            <p class="selecd">800元以下</p>
+            <p>800~2000元</p>
+            <p>2000~5000元</p>
+            <p>5000~1万元</p>
+            <p>1万元~3万元</p>
+            <p>3万元~5万元</p>
+            <p>5万元~10万元</p>
+        </div>
+    </li>
+</ul>
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/j.js"></script>
+<script type="text/javascript">
+    
+    var i=0;
+    var $p=$(".year_nav").children("p");
+    $p.click(function(){
+        i=$p.index($(this));
+        $p.eq(i).addClass("selecd").siblings().removeClass("selecd");
+    })
+    $(".fx_buy_txt>li>p").click(function(){
+        $(this).addClass("selecd").siblings().removeClass("selecd");
+    })
+    var $li=$(".fx_buy_nav").children("li");
+    var $xsli=$(".fx_buy_txt").children("li");
+    $li.click(function(){
+        i=$li.index($(this));
+        $xsli.eq(i).show().css("z-index","11111111111").siblings().hide();
+        $li.eq(i).addClass("co000").siblings().removeClass("co000");
+        $("#xiao").show();
+    })
+
+    $("#sx").click(function(){
+        $(".fx_buy_sx").show();
+        $("#da").show();
+        $("#xiao").hide();
+        $xsli.hide();
+		$("#fx_xs").css({
+			'position':'fixed',
+			'top':0,
+			})
+    })
+    $("#btn").click(function(){
+        $(".fx_buy_sx").hide();
+        $("#da").hide();
+		$("#fx_xs").css({
+			'position':'absolute',
+			'top':0,
+			})
+    })
+	$("#qx").click(function(){
+		$(".fx_buy_sx").hide();
+        $("#da").hide();
+		$("#fx_xs").css({
+			'position':'absolute',
+			'top':0,
+			})
+		})
+
+    // 筛选获取年份
+    var date=new Date();
+    var newy=date.getFullYear();
+    $("#year p").eq(0).html(newy);
+    $("#year p").eq(1).html(newy-1);
+    $("#year p").eq(2).html(newy-2);
+    $("#year p").eq(3).html([newy-3]+"~"+[newy-1]);
+    $("#year p").eq(4).html([newy-6]+"~"+[newy-3]);
+    $("#year p").eq(5).html([newy-16]+"~"+[newy-6]);
+    $("#year p").eq(6).html([newy-26]+"~"+[newy-16]);
+    $("#year p").eq(7).html([newy-36]+"~"+[newy-26]);
+</script>
+</html>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+var url=window.location.href
+console.log(url);
+$.cookie("url",url)
+</script>

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<title>恋嘉</title>
+<link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body class="bgeee">
+<form action="mmgl.html">
+    <header class="borb0 bgfff">
+        <div class="hea_l3 fl mt34" onclick="javascript:history.back(-1); "></div>
+        <p class="font_36">充值</p>
+    </header>
+    <section class="jj"></section>
+    <section class="h98 ty borb0 bgfff" id="cz">
+        <p class="font_30 co000 fl">充值方式：</p>
+        <p class="qrdd_add_input fr co36c">支付宝</p>
+    </section>
+    <section class="h98 ty borb0 bgfff">
+        <p class="font_30 co000 fl" >充值金额：</p>
+        <!-- onpaste="return false;" 表示不能粘贴  -->
+        <input type="tel" class="qrdd_add_input ime"  onpaste="return false;" onkeypress="keyPress()">
+
+    </section>
+    <section class="ty mt178">
+        <div class="g_btn font_28">
+            <p onclick="javascript:window.location.href='qianbao.html','_self'">确定</p>
+        </div>
+    </section>
+    
+</form>
+<section id="xb_on">
+    <p class="font_30 tc borb0 co36c">支付宝</p>
+    <p class="font_30 tc co36c">微信</p>
+    <div class="jj"></div>
+    <button class="font_30 fl co36c">取消</button>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function keyPress() {    
+     var keyCode = event.keyCode;    
+     if ((keyCode >= 48 && keyCode <= 57))    
+    {    
+         event.returnValue = true;    
+     } else {    
+           event.returnValue = false;    
+    }    
+ } 
+    $("#cz").click(function(){
+        $("#xb_on").slideToggle();
+        $("#xb_on p").click(function(){
+            $("#cz").children(".co36c").text($(this).html());
+            $("#xb_on").slideUp();
+        })
+        $("#xb_on button").click(function(){
+            $("#xb_on").slideUp();
+        });
+    })
+</script>
+<script type="text/javascript" src="js/j.js"></script>
+</html>
